@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f0fe;
+}
+.header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    padding-left: 75px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.task-input-container {
+    background: white;
+    border-radius: 10px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.task-input-container h3 {
+    padding-left: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.task-input-box {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task-input-box input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.task-input-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.column {
+    width: 22%;
+    min-height: 300px;
+    /* padding-top: 10px; */
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 10px;
+    text-align: left;
+}
+.column h3 {
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.backlog h3 {
+    background: #d6d6d6;
+    color: #636363;
+}
+.progress h3 {
+    background: #b3d7ff;
+    color: #007bff;
+}
+.done h3 {
+    background: #b3f7b3;
+    color: #498049;
+}
+.trash h3 {
+    background: #ffb3b3;
+    color: #d9534f;
+}
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.task {
+    background: white;
+    border-left: 4px solid transparent;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.trash button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.backlog .task {
+    border-left-color: #d6d6d6;
+}
+.progress .task {
+    border-left-color: #b3d7ff;
+}
+.done .task {
+    border-left-color: #b3f7b3;
+}
+.trash .task {
+    border-left-color: #ffb3b3;
+}
